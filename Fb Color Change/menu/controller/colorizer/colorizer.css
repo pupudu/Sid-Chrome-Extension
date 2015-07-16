@@ -1,0 +1,201 @@
+#colorizer_controller > *
+{
+	display:table-row;
+}
+
+#colorizer_controller > * > *
+{
+	display:table-cell;
+	vertical-align:top;	
+}
+
+#colorizer_controller_picker
+{
+	width:110px;
+}
+
+#colorizer_controller_picker > *
+{
+	border:1px solid #ccc;
+}
+
+#colorizer_controller_picker > *:hover
+{
+	border-color:#fc0;
+}
+
+#colorizer_controller_picker > *:first-child
+{	
+	-webkit-transition:background-color 200ms ease-out;
+	background:url('saturation.png') #000;
+	background-size:cover;
+	height:90px;
+	cursor:pointer;
+	display:table;
+	width:100%;
+}
+
+#colorizer_controller_picker > *:last-child
+{
+	display:table;
+	height:25px;
+	width:100%;
+}
+
+#colorizer_controller_picker > *:last-child > *
+{
+	display:table-cell;
+}
+
+#colorizer_controller_picker > *:last-child > *:first-child
+{
+	width:25px;
+	background:url('empty.png');
+	background-size:100% 100%;
+	cursor:pointer;
+}
+
+#colorizer_controller_picker > *:last-child > *:last-child
+{
+	background:url('spectrum.jpg');
+	background-size:100% 100%;
+	cursor:pointer;
+	width:90px;
+}
+
+#colorizer_controller_tabs
+{
+	padding:0px 10px;
+}
+
+#colorizer_controller_tabs > *
+{
+	cursor:pointer;
+	background-image:url('empty.png');
+	background-size:100% 100%;
+	height:25px;
+	width:25px;
+	border:1px solid #ccc;
+	-webkit-transition:background-color 140ms linear;
+	cursor:pointer;
+}
+
+#colorizer_controller_tabs > * + *
+{
+	margin-top:5px;
+}
+
+#colorizer_controller_tabs *.on, #colorizer_controller_tabs *:hover
+{
+	border-color:#fc0;
+}
+
+#colorizer_controller_picture_preview
+{
+	background:url('missing_picture.png') center center no-repeat;
+	background-size:50%;
+	background-color:rgb(247,247,247);
+	width:110px;
+	border:1px solid rgb(180,180,180);
+	overflow:hidden;
+	-webkit-transition:all 150ms linear;
+	padding:0px;
+	cursor:pointer;
+}
+
+#colorizer_controller_picture_preview.filled
+{
+	background-size:cover;
+	background-color:#000;	
+}
+
+#colorizer_controller_picture_preview:hover
+{
+	border-color:#fc0;
+	background-color:#ffc;
+}
+
+#colorizer_controller_picture_remove
+{
+	background:url('remove_picture.png') no-repeat center;
+	background-size:40px;
+	opacity:0.8;
+	-webkit-transition:opacity 150ms linear;
+	cursor:pointer;
+	height:110px;
+	width:110px;
+	cursor:pointer;
+	display:none;
+}
+
+#colorizer_controller_picture_remove:hover
+{
+	opacity:1;	
+}
+
+#colorizer_controller_picture_upload
+{
+	height:100%;
+	width:100%;
+	opacity:0;
+	cursor:pointer;
+}
+
+#colorizer_controller_picture_preview.filled div
+{
+	display:block;
+}
+
+#colorizer_controller_picture_preview.filled input
+{
+	display:none;
+}
+
+#colorizer_controller_picture_size
+{
+	width:25px;
+}
+
+#colorizer_controller_picture_size > *
+{
+	margin-left:5px;
+	border:1px solid #ccc;
+	width:inherit;
+	height:25px;
+	background:no-repeat center;
+	background-size:80%;
+	-webkit-transition:all 120ms linear;
+	cursor:pointer;
+}
+
+#colorizer_controller_picture_size > *.on, #colorizer_controller_picture_size > *:hover
+{
+	border-color:#fc0;
+	background-color:#ffc;
+}
+
+#colorizer_controller_picture_size > * + *
+{
+	margin-top:5px;
+}
+
+#colorizer_controller_picture_size_fill
+{
+	background-image:url('fill_icon.png');
+}
+
+#colorizer_controller_picture_size_fit
+{
+	background-image:url('fit_icon.png');
+}
+
+#colorizer_controller_picture_size_repeat
+{
+	background-image:url('repeat_icon.png');
+}
+
+#colorizer_controller_picture_size_center
+{
+	background-image:url('center_icon.png');
+}
+

@@ -1,0 +1,77 @@
+#footer_component {
+	height:75px;
+	padding: 18px 15px 0 15px;
+	background-color:#EEE;
+	width:100%;
+	bottom:0;
+	left:0px;
+	z-index:2;
+	position:fixed;
+}
+
+#footer_text {
+	float: left;
+	width: 25%;
+	height: 20px;
+	margin-bottom: 5px;
+	line-height: 20px;
+	font-size: 12px;
+	font-family: arial, sans-serif;
+	font-weight: bold;
+}
+
+#footer_rate,
+#footer_share {
+	float: left;
+	width: 75%;
+	height: 20px;
+	margin-bottom: 5px;
+}
+
+#footer_share > a {
+	display: block;
+	width: 55px;
+	height: 20px;
+	padding-top: 3px;
+	padding-left: 18px;
+	background-color: #eceef5;
+	-webkit-border-radius: 3px;
+	border: 1px solid #cad4e7;
+	color: #3b5998;
+	font-family: 'lucida grande', tahoma, verdana, arial, sans-serif;
+	font-size: 11px;
+	text-decoration: none;
+	background-image: url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/y-/r/tbhIfdAHjXE.png);
+	background-position: 3px 3px;
+	background-repeat: no-repeat;
+}
+
+#footer_rate > a {
+	display: block;
+}
+
+#footer_rate > a > img {
+	cursor: pointer;
+}
+
+#footer_problems {
+	float: right;
+	width: auto;
+	margin-top: -50px;
+	font-size: 12px;
+	font-family: arial, sans-serif;
+	font-weight: bold;
+}
+
+#footer_problems > a {
+	display: block;
+	height: 20px;
+	margin-bottom: 5px;
+	line-height: 20px;
+	text-align: right;
+	color: #e6007f;
+}
+
+#footer_problems > a:hover {
+	text-decoration: underline;
+}

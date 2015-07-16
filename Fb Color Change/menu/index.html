@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<title>FB Color Changer</title>
+		<meta name="google" content="notranslate" />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<script src="../library/f.js"></script>
+		<script src="js/app.js"></script>
+		<script src="js/run.js"></script>
+		<link rel="stylesheet" href="../library/f.css" />
+		<link rel="stylesheet" href="css/app.css" />
+		
+		<script src="js/page.js"></script>
+		<link rel="stylesheet" href="css/page.css" />
+		
+		<script src="js/options.js"></script>
+		<link rel="stylesheet" href="css/options.css" />
+			
+		<script src="js/footer.js"></script>
+		<link rel="stylesheet" href="css/footer.css" />
+			
+		<script src="controller/colorizer/colorizer.js"></script>
+		<link rel="stylesheet" href="controller/colorizer/colorizer.css" />
+
+		<!--script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script-->
+	</head>
+	<body>
+		<div id="frame_component">
+
+			<div id="page_component">
+			
+				<!-- options -->
+				<div id="options_page">
+					
+					<!-- the controller groups -->
+					<div class="group">
+						<div class="pane">
+							<div class="icon"></div>
+							<div class="name"></div>
+							<div class="status"></div>
+						</div>
+						<div class="detail">
+							<div></div>
+						</div>
+					</div>
+					<div class="split"></div>
+	
+					<!-- colorizer controller -->
+					<div id="colorizer_controller">
+						<div>
+							<div id="colorizer_controller_picker">
+								<div></div>
+								<div>
+									<div></div>
+									<div></div>
+								</div>
+							</div>
+							<div id="colorizer_controller_tabs">
+								<div "colorizer_controller_tab_a" name="color_a" tip="set the first color"></div>
+								<div "colorizer_controller_tab_b" name="color_b" tip="set the second color"></div>
+								<div "colorizer_controller_tab_c" name="color_c" tip="set the third color"></div>
+								<div "colorizer_controller_tab_d" name="color_d" tip="set the fourth color"></div>
+							</div>
+							<div id="colorizer_controller_picture_preview" tip="upload a background picture">
+								<input id="colorizer_controller_picture_upload" type="file" accept="image/*" />
+								<div id="colorizer_controller_picture_remove"></div>
+							</div>
+							<div id="colorizer_controller_picture_size">
+								<div id="colorizer_controller_picture_size_fill" tip="fill background"></div>
+								<div id="colorizer_controller_picture_size_fit" tip="fit background"></div>
+								<div id="colorizer_controller_picture_size_repeat" tip="repeat background"></div>
+								<div id="colorizer_controller_picture_size_center" tip="center background"></div>
+							</div>
+						</div>
+					</div>
+				
+				</div>
+
+			</div>
+			
+			<!-- footer -->
+			<div id="footer_component">
+				<div id="footer_text">
+					Rate it:
+				</div>
+				<div id="footer_rate">
+					<a id="footer_component_rate" href="#"><img src="img/rating.png" /></a>
+				</div>
+				<div id="footer_text">
+					Spread it:
+				</div>
+				<!--div id="footer_like">
+					<a id="footer_component_like" href="#">Like</a>
+				</div-->
+				<div id="footer_share">
+					<a id="footer_component_share" href="#">Share</a>
+				</div>
+				<div id="footer_problems">
+					<a id="footer_component_problems" href="#">Problems?</a>
+					<a id="footer_component_improvements" href="#">Improvements?</a>
+				</div>
+			</div>
+		
+		</div>
+	</body>
+</html>

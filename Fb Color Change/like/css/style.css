@@ -1,0 +1,20 @@
+body {
+	background: #fff;
+	font-family: sans-serif;
+}
+
+h1 {
+	font-size: 24px;
+	text-align: center;
+	color: #e6007f;
+	margin: 20px 0;
+}
+
+iframe {
+	position: absolute;
+	left: 50%;
+	width: 120px;
+	height: 80px;
+	margin-top: 50px;
+	margin-left: -40px;
+}

@@ -1,0 +1,33 @@
+{
+   "background": {
+      "page": "background.html"
+   },
+   "content_scripts": [ {
+      "js": [ "content/app.js", "content/colorizer.js", "content/run.js" ],
+      "matches": [ "http://www.facebook.com/*", "https://www.facebook.com/*" ],
+      "run_at": "document_start"
+   }, {
+      "js": [ "content/modify.js" ],
+      "matches": [ "http://www.facebook.com/*", "https://www.facebook.com/*" ],
+      "run_at": "document_end"
+   } ],
+   "content_security_policy": "script-src 'self' https://ssl.google-analytics.com https://apis.google.com https://*.fbcolorchanger.com 'unsafe-eval'; object-src 'self'",
+   "default_locale": "en",
+   "description": "__MSG_APP_DESCRIPTION__",
+   "icons": {
+      "128": "icons/128.png",
+      "16": "icons/16.png",
+      "48": "icons/48.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCglh1txESK0/Ws4xhnu20eG3xIh+g+jT2RzXWOxzPpIrZQQXnHwJDYFM+SZIYnsZi6wiapV/gf0wkTQCwTZe1hG5FVanszg8jMMIMARepwEJHP15D1sSmI9DfyUmWQ3s+yV0OghQGPBpek0oEYDP2olEUiSXKkw6yagv72ytxOhQIDAQAB",
+   "manifest_version": 2,
+   "name": "__MSG_APP_NAME__",
+   "offline_enabled": true,
+   "page_action": {
+      "default_icon": "icons/default.png"
+   },
+   "permissions": [ "tabs", "http://*/*", "https://*/*", "webRequest", "webRequestBlocking", "notifications", "storage", "webNavigation", "idle" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "4.0.0.0",
+   "web_accessible_resources": [ "resources/*" ]
+}
