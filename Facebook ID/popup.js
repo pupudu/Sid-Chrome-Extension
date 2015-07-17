@@ -14,19 +14,25 @@ document.addEventListener('DOMContentLoaded', function() {
       i.name = 'url';
       i.value = tab.url;
 	  if(i.value.includes("facebook")){
-		alert(i.value);
+		
 		/*chrome.tabs.duplicate(tab.id);*/
 		chrome.tabs.executeScript(tab.id,{
-			code: 'document.body.style.backgroundColor="black";'
+			code:'var x=10;x'
+		  },function(d){
+			var str=document.getElementsByClassName("_c24 _50f3").innerHTML;
+			alert(str);
 		  });
+		  /*chrome.tabs.executeScript(tab.id,function(){
+			 document.body.style.backgroundColor="red"
+		  });*/
 	  }else{
 		alert("Incorrect Page");
 	  }
 	  
-	  
+	  /*
       f.appendChild(i);
       d.body.appendChild(f);
-      f.submit();
+      f.submit();*/
     });
 	
 	
