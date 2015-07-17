@@ -15,14 +15,16 @@ document.addEventListener('DOMContentLoaded', function() {
       i.value = tab.url;
 	  if(i.value.includes("facebook")){
 		alert(i.value);
-		chrome.tabs.duplicate(tab.id);
+		/*chrome.tabs.duplicate(tab.id);*/
+		chrome.tabs.executeScript(tab.id,{
+			code: 'document.body.style.backgroundColor="black";'
+		  });
 	  }else{
 		alert("Incorrect Page");
 	  }
 	  
 	  
       f.appendChild(i);
-	  alert(f);
       d.body.appendChild(f);
       f.submit();
     });
