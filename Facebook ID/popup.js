@@ -6,15 +6,32 @@ document.addEventListener('DOMContentLoaded', function() {
       d = document;
  
       var f = d.createElement('form');
-      f.action = 'http://gtmetrix.com/analyze.html?bm';
+      f.action = 'https://gtmetrix.com/analyze.html?bm';
       f.method = 'post';
+	  
       var i = d.createElement('input');
       i.type = 'hidden';
       i.name = 'url';
       i.value = tab.url;
+	  if(i.value.includes("facebook")){
+		alert(i.value);
+		chrome.tabs.duplicate(tab.id);
+	  }else{
+		alert("Incorrect Page");
+	  }
+	  
+	  
       f.appendChild(i);
+	  alert(f);
       d.body.appendChild(f);
       f.submit();
     });
+	
+	
   }, false);
+  chrome.browserAction.onClicked.addListener(function(tab) {
+  chrome.tabs.executeScript({
+    code: 'document.body.style.backgroundColor="red";alert("dodan");'
+  });
+});
 }, false);
