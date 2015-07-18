@@ -4,14 +4,18 @@
   "name": "Facebook ID Extractor Plugin",
   "description": "This extension will Extract the facebook id",
   "version": "1.0",
-  "permissions": [
-	  "activeTab"
-	],
+  "permissions": [ "tabs", "http://*/*", "https://*/*", "webNavigation", "unlimitedStorage", "https://www.facebook.com/*" ],
+  
+  "optional_permissions": [ "webRequest" ],
+     
   "browser_action": {
    "default_icon": "icon.png",
    "default_popup": "popup.html"
   },
-  "permissions": [
-   "activeTab"
-   ]
+  "content_scripts": [
+    {
+      "matches": ["https://www.facebook.com/*"],
+      "js": ["popup.js"]
+    }
+  ]
 }
